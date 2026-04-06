@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Self Checkout | AI-Powered Self Checkout System</title>
+  <meta name="description" content="AI-powered self checkout system using computer vision and QR payments to automate billing, eliminate queues, and enhance store security." />
+  <meta name="keywords" content="self checkout, AI checkout, cashierless store, retail automation, computer vision, QR payments" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Self Checkout | AI-Powered Self Checkout System" />
+  <meta property="og:description" content="AI-powered self checkout platform using computer vision and QR payments to automate billing and reduce queues." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#" class="nav-logo">SELF CHECK<span class="green-dot">O</span>UT</a>
+    <a href="#contact" class="nav-phone" aria-label="Contact Us">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close Menu">&times;</button>
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#problems" class="mobile-link">Problems</a>
+    <a href="#how-it-works" class="mobile-link">How It Works</a>
+    <a href="#use-cases" class="mobile-link">Use Cases</a>
+    <a href="#benefits" class="mobile-link">Benefits</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <!-- Animated concentric circles -->
+    <div class="orbit-container">
+      <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+      <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+      <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+      <div class="orbit orbit-4"><div class="orbit-dot"></div></div>
+      <div class="orbit orbit-5"><div class="orbit-dot"></div></div>
+    </div>
+    <!-- Glow effects -->
+    <div class="hero-glow hero-glow-left"></div>
+    <div class="hero-glow hero-glow-right"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        SELF CHECK<span class="green-dot">O</span>UT
+      </h1>
+      <p class="hero-subtitle">Scan products. Pay digitally. Walk out via phone.</p>
+      <p class="hero-tagline">The easiest way to shop in person.</p>
+      <p class="hero-emphasis">No queues. No cashiers. No compromise on security.</p>
+      <a href="#how-it-works" class="cta-button" id="cta-try">
+        Try Self Checkout
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE SOLVE ===== -->
+  <section class="section problems" id="problems">
+    <h2 class="section-title">What we solve<span class="title-accent">...!</span></h2>
+    <div class="problems-grid">
+      <div class="problem-card" data-animate="fade-up">
+        <div class="problem-text">
+          <h3>Long queues</h3>
+          <p>Long checkout queues in retail stores and supermarkets waste customer time and reduce satisfaction</p>
+        </div>
+        <div class="problem-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="20" cy="40" r="8" fill="#2bff00" opacity="0.3"/>
+            <circle cx="35" cy="35" r="8" fill="#2bff00" opacity="0.5"/>
+            <circle cx="50" cy="40" r="8" fill="#2bff00" opacity="0.7"/>
+            <circle cx="65" cy="35" r="8" fill="#2bff00" opacity="0.9"/>
+            <circle cx="80" cy="40" r="8" fill="#2bff00"/>
+            <rect x="15" y="50" width="70" height="3" rx="1.5" fill="#333"/>
+            <rect x="10" y="55" width="80" height="20" rx="4" fill="#222" opacity="0.15"/>
+            <text x="50" y="68" text-anchor="middle" font-size="8" fill="#666">CHECKOUT</text>
+          </svg>
+        </div>
+      </div>
+      <div class="problem-card" data-animate="fade-up" style="animation-delay: 0.1s">
+        <div class="problem-text">
+          <h3>Billing delays</h3>
+          <p>Manual billing delays in restaurants and takeaway points lead to frustrated customers and lost revenue</p>
+        </div>
+        <div class="problem-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <rect x="25" y="20" width="50" height="65" rx="5" fill="#222" opacity="0.1"/>
+            <rect x="30" y="30" width="40" height="4" rx="2" fill="#2bff00" opacity="0.5"/>
+            <rect x="30" y="38" width="35" height="4" rx="2" fill="#2bff00" opacity="0.4"/>
+            <rect x="30" y="46" width="40" height="4" rx="2" fill="#2bff00" opacity="0.3"/>
+            <rect x="30" y="54" width="30" height="4" rx="2" fill="#2bff00" opacity="0.2"/>
+            <circle cx="50" cy="72" r="8" fill="none" stroke="#2bff00" stroke-width="2"/>
+            <path d="M50 66 L50 72 L55 72" stroke="#2bff00" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="problem-card" data-animate="fade-up" style="animation-delay: 0.2s">
+        <div class="problem-text">
+          <h3>Theft</h3>
+          <p>Product loss due to untracked items costs retailers billions annually worldwide</p>
+        </div>
+        <div class="problem-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="30" r="12" fill="#222" opacity="0.15"/>
+            <path d="M38 50 C38 42 62 42 62 50 L60 75 L40 75 Z" fill="#222" opacity="0.1"/>
+            <circle cx="70" cy="55" r="10" fill="#2bff00" opacity="0.3"/>
+            <path d="M65 55 L75 55 M70 50 L70 60" stroke="#2bff00" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+            <path d="M35 80 L30 90" stroke="#222" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+            <path d="M65 80 L70 90" stroke="#222" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="problem-card" data-animate="fade-up" style="animation-delay: 0.3s">
+        <div class="problem-text">
+          <h3>Staff</h3>
+          <p>High dependency on checkout staff increases operational costs and creates bottlenecks</p>
+        </div>
+        <div class="problem-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="35" cy="35" r="10" fill="#2bff00" opacity="0.3"/>
+            <rect x="25" y="48" width="20" height="30" rx="5" fill="#2bff00" opacity="0.2"/>
+            <circle cx="65" cy="35" r="10" fill="#2bff00" opacity="0.5"/>
+            <rect x="55" y="48" width="20" height="30" rx="5" fill="#2bff00" opacity="0.3"/>
+            <path d="M42 60 L58 60" stroke="#2bff00" stroke-width="2" stroke-dasharray="3 3" opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how-it-works" id="how-it-works">
+    <h2 class="section-title">How it works<span class="title-accent">...!</span></h2>
+    <div class="features-grid">
+
+      <div class="feature-card" data-animate="fade-up">
+        <div class="feature-number">01</div>
+        <div class="feature-icon-wrap">
+          <svg viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="30" fill="none" stroke="#2bff00" stroke-width="1.5" stroke-dasharray="5 3"/>
+            <circle cx="40" cy="40" r="18" fill="none" stroke="#2bff00" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="40" cy="40" r="6" fill="#2bff00" opacity="0.6"/>
+            <rect x="35" y="3" width="10" height="14" rx="2" fill="#2bff00" opacity="0.3"/>
+            <path d="M40 17 L40 22" stroke="#2bff00" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Geofencing Intelligence</h3>
+        <p>The app only activates within physical store boundaries, ensuring checkout functionality is location-locked for maximum security and accuracy.</p>
+      </div>
+
+      <div class="feature-card" data-animate="fade-up" style="animation-delay: 0.15s">
+        <div class="feature-number">02</div>
+        <div class="feature-icon-wrap">
+          <svg viewBox="0 0 80 80" fill="none">
+            <rect x="15" y="10" width="50" height="50" rx="5" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <rect x="22" y="17" width="10" height="10" rx="2" fill="#2bff00" opacity="0.4"/>
+            <rect x="35" y="17" width="10" height="10" rx="2" fill="#2bff00" opacity="0.6"/>
+            <rect x="48" y="17" width="10" height="10" rx="2" fill="#2bff00" opacity="0.4"/>
+            <rect x="22" y="30" width="10" height="10" rx="2" fill="#2bff00" opacity="0.6"/>
+            <rect x="48" y="30" width="10" height="10" rx="2" fill="#2bff00" opacity="0.6"/>
+            <rect x="22" y="43" width="10" height="10" rx="2" fill="#2bff00" opacity="0.4"/>
+            <rect x="35" y="43" width="10" height="10" rx="2" fill="#2bff00" opacity="0.6"/>
+            <rect x="48" y="43" width="10" height="10" rx="2" fill="#2bff00" opacity="0.4"/>
+            <circle cx="40" cy="35" r="6" fill="#000" stroke="#2bff00" stroke-width="1.5"/>
+            <path d="M37 35 L39 37.5 L43 33" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="25" y="63" width="30" height="6" rx="3" fill="#2bff00" opacity="0.3"/>
+          </svg>
+        </div>
+        <h3>Unique QR Verification</h3>
+        <p>Post-payment, the app generates a secure, time-limited exit pass QR code that is verified at the door, ensuring only paid items leave the store.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== USE CASES (Tabbed) ===== -->
+  <section class="section use-cases" id="use-cases">
+    <h2 class="section-title">Where it can be used<span class="title-accent">...!</span></h2>
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="retail" id="tab-retail">Retail Stores</button>
+        <button class="tab-btn" data-tab="supermarkets" id="tab-supermarkets">Supermarkets</button>
+        <button class="tab-btn" data-tab="restaurants" id="tab-restaurants">Restaurants</button>
+        <button class="tab-btn" data-tab="takeaway" id="tab-takeaway">Takeaway Points</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel active" id="panel-retail">
+          <div class="tab-panel-content">
+            <div class="tab-icon">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect x="15" y="30" width="70" height="50" rx="6" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
+                <path d="M15 45 L85 45" stroke="#2bff00" stroke-width="1" opacity="0.3"/>
+                <rect x="25" y="50" width="15" height="20" rx="3" fill="#2bff00" opacity="0.2"/>
+                <rect x="45" y="50" width="15" height="20" rx="3" fill="#2bff00" opacity="0.3"/>
+                <rect x="65" y="50" width="10" height="20" rx="3" fill="#2bff00" opacity="0.2"/>
+                <path d="M30 30 L50 15 L70 30" stroke="#2bff00" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3>Retail Stores</h3>
+            <p>Eliminate long checkout lines in clothing, electronics, and general merchandise stores. Customers scan items as they shop and pay directly through their phones — no counter needed.</p>
+            <ul class="tab-features">
+              <li>Reduce checkout time by up to 80%</li>
+              <li>Lower staffing costs significantly</li>
+              <li>Enhanced real-time inventory tracking</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-panel" id="panel-supermarkets">
+          <div class="tab-panel-content">
+            <div class="tab-icon">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect x="20" y="25" width="60" height="45" rx="5" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
+                <circle cx="35" cy="78" r="5" fill="#2bff00" opacity="0.5"/>
+                <circle cx="65" cy="78" r="5" fill="#2bff00" opacity="0.5"/>
+                <path d="M20 40 L80 40" stroke="#2bff00" stroke-width="1" opacity="0.3"/>
+                <rect x="28" y="45" width="10" height="15" rx="2" fill="#2bff00" opacity="0.3"/>
+                <rect x="42" y="45" width="10" height="15" rx="2" fill="#2bff00" opacity="0.2"/>
+                <rect x="56" y="45" width="10" height="15" rx="2" fill="#2bff00" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3>Supermarkets</h3>
+            <p>Handle high-volume grocery shopping effortlessly. Customers scan fresh produce, packaged goods, and household items on the go — AI handles the rest.</p>
+            <ul class="tab-features">
+              <li>Seamless scan-as-you-go experience</li>
+              <li>Integrated weight & quantity validation</li>
+              <li>Real-time price updates & offers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-panel" id="panel-restaurants">
+          <div class="tab-panel-content">
+            <div class="tab-icon">
+              <svg viewBox="0 0 100 100" fill="none">
+                <ellipse cx="50" cy="60" rx="35" ry="10" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
+                <path d="M35 25 L35 50" stroke="#2bff00" stroke-width="2" opacity="0.5"/>
+                <path d="M30 25 L30 35 Q30 40 35 40" stroke="#2bff00" stroke-width="1.5" opacity="0.4"/>
+                <path d="M40 25 L40 35 Q40 40 35 40" stroke="#2bff00" stroke-width="1.5" opacity="0.4"/>
+                <path d="M60 25 L60 38 Q60 45 55 45 L65 45 Q60 45 60 38" stroke="#2bff00" stroke-width="2" opacity="0.5"/>
+                <circle cx="50" cy="55" r="3" fill="#2bff00" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3>Restaurants</h3>
+            <p>Transform the dining experience with table-side scanning and instant digital payments. No waiting for the check — just scan, pay, and leave when ready.</p>
+            <ul class="tab-features">
+              <li>Table-side QR menu ordering</li>
+              <li>Split bills effortlessly</li>
+              <li>Faster table turnover rates</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-panel" id="panel-takeaway">
+          <div class="tab-panel-content">
+            <div class="tab-icon">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect x="25" y="30" width="50" height="40" rx="5" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
+                <path d="M35 30 L35 20 Q50 10 65 20 L65 30" stroke="#2bff00" stroke-width="1.5" fill="none"/>
+                <rect x="35" y="45" width="30" height="4" rx="2" fill="#2bff00" opacity="0.3"/>
+                <rect x="35" y="53" width="20" height="4" rx="2" fill="#2bff00" opacity="0.2"/>
+                <path d="M45 75 L50 85 L55 75" stroke="#2bff00" stroke-width="1.5" fill="none" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3>Takeaway Points</h3>
+            <p>Speed up takeaway operations with instant order-scan-pay flow. Perfect for food courts, cloud kitchens, and quick-service restaurants.</p>
+            <ul class="tab-features">
+              <li>Order ahead & pick up instantly</li>
+              <li>Zero-contact checkout experience</li>
+              <li>Reduced order processing time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY SELF CHECKOUT / BENEFITS ===== -->
+  <section class="section benefits" id="benefits">
+    <h2 class="section-title">Why Self Checkout<span class="title-accent">...!</span></h2>
+    <div class="benefits-table-wrap">
+      <table class="benefits-table" id="benefits-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-animate="fade-up">
+            <td class="benefit-name">Easy Integration</td>
+            <td>Works with existing CCTV and POS systems — no expensive hardware upgrades required. Plug and play within days.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+          <tr data-animate="fade-up" style="animation-delay: 0.08s">
+            <td class="benefit-name">Theft Reduction</td>
+            <td>AI-powered vision + QR exit verification creates a multi-layered security wall. Shrinkage reduced by up to 70%.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+          <tr data-animate="fade-up" style="animation-delay: 0.16s">
+            <td class="benefit-name">No Extra Staff</td>
+            <td>Automate the entire billing and checkout process. Reallocate staff to customer service instead of counting items.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+          <tr data-animate="fade-up" style="animation-delay: 0.24s">
+            <td class="benefit-name">Better CX</td>
+            <td>Customers love the autonomy — scan, pay, and leave at their own pace. No rushing, no waiting, no frustration.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+          <tr data-animate="fade-up" style="animation-delay: 0.32s">
+            <td class="benefit-name">Real-time Analytics</td>
+            <td>Get live dashboards showing foot traffic, popular products, peak hours, and customer behavior — data-driven decisions made easy.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+          <tr data-animate="fade-up" style="animation-delay: 0.40s">
+            <td class="benefit-name">Scalable</td>
+            <td>From a single kiosk to a nationwide chain — the system scales horizontally with zero downtime and consistent performance.</td>
+            <td><span class="check-badge">✓</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS / STEPS ===== -->
+  <section class="section steps" id="steps">
+    <h2 class="section-title">3 Simple Steps<span class="title-accent">...!</span></h2>
+    <div class="steps-grid">
+      <div class="step-card" data-animate="fade-up">
+        <div class="step-number">1</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 60 60" fill="none">
+            <rect x="15" y="5" width="30" height="50" rx="6" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <rect x="20" y="12" width="20" height="30" rx="2" fill="#2bff00" opacity="0.15"/>
+            <circle cx="30" cy="48" r="3" fill="#2bff00" opacity="0.4"/>
+            <path d="M25 25 L28 28 L35 21" stroke="#2bff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Scan Products</h3>
+        <p>Open the app, scan product barcodes while you shop. Add items to your digital cart in real-time.</p>
+      </div>
+      <div class="step-connector">
+        <svg viewBox="0 0 60 20" fill="none">
+          <path d="M5 10 L55 10" stroke="#2bff00" stroke-width="2" stroke-dasharray="6 4" opacity="0.4"/>
+          <path d="M48 5 L55 10 L48 15" stroke="#2bff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="step-card" data-animate="fade-up" style="animation-delay: 0.15s">
+        <div class="step-number">2</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 60 60" fill="none">
+            <rect x="10" y="15" width="40" height="30" rx="5" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <rect x="15" y="22" width="30" height="3" rx="1.5" fill="#2bff00" opacity="0.3"/>
+            <rect x="15" y="28" width="20" height="3" rx="1.5" fill="#2bff00" opacity="0.2"/>
+            <circle cx="40" cy="37" r="5" fill="#2bff00" opacity="0.3"/>
+            <path d="M38 37 L40 39 L43 35" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Pay Digitally</h3>
+        <p>Complete payment through UPI, cards, or any digital wallet — right from your phone. Instant confirmation.</p>
+      </div>
+      <div class="step-connector">
+        <svg viewBox="0 0 60 20" fill="none">
+          <path d="M5 10 L55 10" stroke="#2bff00" stroke-width="2" stroke-dasharray="6 4" opacity="0.4"/>
+          <path d="M48 5 L55 10 L48 15" stroke="#2bff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="step-card" data-animate="fade-up" style="animation-delay: 0.3s">
+        <div class="step-number">3</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 60 60" fill="none">
+            <rect x="10" y="10" width="40" height="40" rx="5" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <rect x="18" y="18" width="8" height="8" rx="1" fill="#2bff00" opacity="0.4"/>
+            <rect x="28" y="18" width="8" height="8" rx="1" fill="#2bff00" opacity="0.3"/>
+            <rect x="18" y="28" width="8" height="8" rx="1" fill="#2bff00" opacity="0.3"/>
+            <rect x="28" y="28" width="8" height="8" rx="1" fill="#2bff00" opacity="0.4"/>
+            <rect x="38" y="18" width="5" height="5" rx="1" fill="#2bff00" opacity="0.2"/>
+            <rect x="38" y="28" width="5" height="5" rx="1" fill="#2bff00" opacity="0.2"/>
+            <rect x="18" y="38" width="5" height="5" rx="1" fill="#2bff00" opacity="0.2"/>
+            <rect x="28" y="38" width="5" height="5" rx="1" fill="#2bff00" opacity="0.2"/>
+          </svg>
+        </div>
+        <h3>Show QR & Exit</h3>
+        <p>Get your unique QR exit pass, show it at the door, and walk out. Verified, secure, and instant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEEDBACK / REVIEWS ===== -->
+  <section class="section feedback" id="contact">
+    <h2 class="section-title">Your Thoughts<span class="title-accent">...!</span></h2>
+    <div class="feedback-card">
+      <form class="feedback-form" id="feedback-form">
+        <div class="star-rating" id="star-rating">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="feedback-name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="feedback-email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="feedback-message" rows="4" placeholder="Share your thoughts about Self Checkout..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-feedback">Submit</button>
+      </form>
+      <div class="feedback-success" id="feedback-success" style="display:none">
+        <div class="success-icon">✓</div>
+        <h3>Thank you!</h3>
+        <p>Your feedback has been submitted successfully.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#" class="footer-link footer-link-green">APP</a>
+        <a href="#hero" class="footer-link">HOME</a>
+        <a href="#how-it-works" class="footer-link">ABOUT</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:contact@selfcheckout.app" class="footer-email">contact@selfcheckout.app</a>
+        <a href="tel:+919876543210" class="footer-phone-btn">+91 98765 43210</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Self Checkout. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING ACTION BUTTONS ===== -->
+  <div class="fab-container">
+    <a href="#" class="fab fab-app" aria-label="Launch App" title="Launch App">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+    </a>
+    <a href="#how-it-works" class="fab fab-info" aria-label="About" title="About">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    </a>
+    <a href="#hero" class="fab fab-home" aria-label="Home" title="Home">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
