@@ -68,7 +68,7 @@
       <p class="hero-subtitle">Scan products. Pay digitally. Walk out via phone.</p>
       <p class="hero-tagline">The easiest way to shop in person.</p>
       <p class="hero-emphasis">No queues. No cashiers. No compromise on security.</p>
-      <a href="https://scancart-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" class="cta-button" id="cta-try">
+      <a href="https://smart-scancart.vercel.app/" target="_blank" rel="noopener noreferrer" class="cta-button" id="cta-try">
         Try Self Checkout
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
@@ -168,8 +168,56 @@
         <p>The app only activates within physical store boundaries, ensuring checkout functionality is location-locked for maximum security and accuracy.</p>
       </div>
 
-      <div class="feature-card" data-animate="fade-up" style="animation-delay: 0.15s">
+      <div class="feature-card" data-animate="fade-up" style="animation-delay: 0.1s">
         <div class="feature-number">02</div>
+        <div class="feature-icon-wrap">
+          <svg viewBox="0 0 80 80" fill="none">
+            <!-- Search / magnifying glass -->
+            <circle cx="34" cy="34" r="18" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="12" fill="none" stroke="#2bff00" stroke-width="1" opacity="0.3"/>
+            <line x1="47" y1="47" x2="62" y2="62" stroke="#2bff00" stroke-width="3" stroke-linecap="round"/>
+            <!-- Product boxes inside lens -->
+            <rect x="26" y="28" width="6" height="6" rx="1" fill="#2bff00" opacity="0.5"/>
+            <rect x="34" y="28" width="6" height="6" rx="1" fill="#2bff00" opacity="0.4"/>
+            <rect x="30" y="36" width="6" height="6" rx="1" fill="#2bff00" opacity="0.3"/>
+            <!-- Availability check mark -->
+            <path d="M56 18 L52 22" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <circle cx="56" cy="14" r="4" fill="none" stroke="#2bff00" stroke-width="1" opacity="0.4"/>
+            <path d="M54 14 L56 16 L59 12" stroke="#2bff00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <h3>Search Product Availability</h3>
+        <p>Instantly search and check if any product is available in the store before you walk the aisles — saving time and ensuring you find what you need.</p>
+      </div>
+
+      <div class="feature-card" data-animate="fade-up" style="animation-delay: 0.2s">
+        <div class="feature-number">03</div>
+        <div class="feature-icon-wrap">
+          <svg viewBox="0 0 80 80" fill="none">
+            <!-- Phone body -->
+            <rect x="20" y="5" width="40" height="70" rx="8" fill="none" stroke="#2bff00" stroke-width="1.5"/>
+            <rect x="24" y="14" width="32" height="46" rx="2" fill="#2bff00" opacity="0.08"/>
+            <!-- Camera lens / viewfinder -->
+            <circle cx="40" cy="37" r="10" fill="none" stroke="#2bff00" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="40" cy="37" r="5" fill="#2bff00" opacity="0.3"/>
+            <circle cx="40" cy="37" r="2" fill="#2bff00" opacity="0.7"/>
+            <!-- Corner brackets (scan frame) -->
+            <path d="M27 18 L27 24 L33 24" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <path d="M53 18 L53 24 L47 24" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <path d="M27 56 L27 50 L33 50" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <path d="M53 56 L53 50 L47 50" stroke="#2bff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            <!-- Scan line animation hint -->
+            <line x1="28" y1="37" x2="52" y2="37" stroke="#2bff00" stroke-width="1" opacity="0.4" stroke-dasharray="3 2"/>
+            <!-- Home button -->
+            <circle cx="40" cy="68" r="3" fill="none" stroke="#2bff00" stroke-width="1" opacity="0.3"/>
+          </svg>
+        </div>
+        <h3>Scan with Mobile Camera</h3>
+        <p>Use your phone's camera to scan product barcodes directly — no extra hardware needed. Just point, scan, and add items to your digital cart instantly.</p>
+      </div>
+
+      <div class="feature-card" data-animate="fade-up" style="animation-delay: 0.3s">
+        <div class="feature-number">04</div>
         <div class="feature-icon-wrap">
           <svg viewBox="0 0 80 80" fill="none">
             <rect x="15" y="10" width="50" height="50" rx="5" fill="none" stroke="#2bff00" stroke-width="1.5"/>
@@ -200,8 +248,7 @@
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="retail" id="tab-retail">Retail Stores</button>
         <button class="tab-btn" data-tab="supermarkets" id="tab-supermarkets">Supermarkets</button>
-        <button class="tab-btn" data-tab="restaurants" id="tab-restaurants">Restaurants</button>
-        <button class="tab-btn" data-tab="takeaway" id="tab-takeaway">Takeaway Points</button>
+        <button class="tab-btn" data-tab="mall" id="tab-mall">Malls</button>
       </div>
       <div class="tab-panels">
         <div class="tab-panel active" id="panel-retail">
@@ -247,44 +294,35 @@
             </ul>
           </div>
         </div>
-        <div class="tab-panel" id="panel-restaurants">
+        <div class="tab-panel" id="panel-mall">
           <div class="tab-panel-content">
             <div class="tab-icon">
               <svg viewBox="0 0 100 100" fill="none">
-                <ellipse cx="50" cy="60" rx="35" ry="10" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
-                <path d="M35 25 L35 50" stroke="#2bff00" stroke-width="2" opacity="0.5"/>
-                <path d="M30 25 L30 35 Q30 40 35 40" stroke="#2bff00" stroke-width="1.5" opacity="0.4"/>
-                <path d="M40 25 L40 35 Q40 40 35 40" stroke="#2bff00" stroke-width="1.5" opacity="0.4"/>
-                <path d="M60 25 L60 38 Q60 45 55 45 L65 45 Q60 45 60 38" stroke="#2bff00" stroke-width="2" opacity="0.5"/>
-                <circle cx="50" cy="55" r="3" fill="#2bff00" opacity="0.4"/>
+                <!-- Mall building -->
+                <rect x="10" y="35" width="80" height="45" rx="4" fill="#2bff00" opacity="0.08" stroke="#2bff00" stroke-width="1.5"/>
+                <!-- Roof / entrance arch -->
+                <path d="M20 35 L50 15 L80 35" stroke="#2bff00" stroke-width="1.5" fill="none"/>
+                <circle cx="50" cy="25" r="4" fill="#2bff00" opacity="0.4"/>
+                <!-- Store sections -->
+                <rect x="16" y="45" width="18" height="28" rx="2" fill="#2bff00" opacity="0.15" stroke="#2bff00" stroke-width="0.8"/>
+                <rect x="40" y="45" width="18" height="28" rx="2" fill="#2bff00" opacity="0.2" stroke="#2bff00" stroke-width="0.8"/>
+                <rect x="64" y="45" width="18" height="28" rx="2" fill="#2bff00" opacity="0.15" stroke="#2bff00" stroke-width="0.8"/>
+                <!-- Doors -->
+                <rect x="46" y="60" width="8" height="13" rx="1.5" fill="#2bff00" opacity="0.35"/>
+                <!-- Floor line -->
+                <line x1="5" y1="80" x2="95" y2="80" stroke="#2bff00" stroke-width="1" opacity="0.2"/>
+                <!-- People dots -->
+                <circle cx="30" cy="85" r="2.5" fill="#2bff00" opacity="0.3"/>
+                <circle cx="50" cy="87" r="2.5" fill="#2bff00" opacity="0.4"/>
+                <circle cx="70" cy="85" r="2.5" fill="#2bff00" opacity="0.3"/>
               </svg>
             </div>
-            <h3>Restaurants</h3>
-            <p>Transform the dining experience with table-side scanning and instant digital payments. No waiting for the check — just scan, pay, and leave when ready.</p>
+            <h3>Malls & Shopping Centres</h3>
+            <p>Transform the mall shopping experience across multiple stores under one roof. Shoppers scan products from any participating store, build a unified cart, and checkout once — no need to queue at every individual shop.</p>
             <ul class="tab-features">
-              <li>Table-side QR menu ordering</li>
-              <li>Split bills effortlessly</li>
-              <li>Faster table turnover rates</li>
-            </ul>
-          </div>
-        </div>
-        <div class="tab-panel" id="panel-takeaway">
-          <div class="tab-panel-content">
-            <div class="tab-icon">
-              <svg viewBox="0 0 100 100" fill="none">
-                <rect x="25" y="30" width="50" height="40" rx="5" fill="#2bff00" opacity="0.1" stroke="#2bff00" stroke-width="1.5"/>
-                <path d="M35 30 L35 20 Q50 10 65 20 L65 30" stroke="#2bff00" stroke-width="1.5" fill="none"/>
-                <rect x="35" y="45" width="30" height="4" rx="2" fill="#2bff00" opacity="0.3"/>
-                <rect x="35" y="53" width="20" height="4" rx="2" fill="#2bff00" opacity="0.2"/>
-                <path d="M45 75 L50 85 L55 75" stroke="#2bff00" stroke-width="1.5" fill="none" opacity="0.4"/>
-              </svg>
-            </div>
-            <h3>Takeaway Points</h3>
-            <p>Speed up takeaway operations with instant order-scan-pay flow. Perfect for food courts, cloud kitchens, and quick-service restaurants.</p>
-            <ul class="tab-features">
-              <li>Order ahead & pick up instantly</li>
-              <li>Zero-contact checkout experience</li>
-              <li>Reduced order processing time</li>
+              <li>Unified checkout across multiple stores</li>
+              <li>Reduce peak-hour congestion at counters</li>
+              <li>Seamless digital payments & e-receipts</li>
             </ul>
           </div>
         </div>
@@ -307,12 +345,7 @@
         <tbody>
           <tr data-animate="fade-up">
             <td class="benefit-name">Easy Integration</td>
-            <td>Works with existing CCTV and POS systems — no expensive hardware upgrades required. Plug and play within days.</td>
-            <td><span class="check-badge">✓</span></td>
-          </tr>
-          <tr data-animate="fade-up" style="animation-delay: 0.08s">
-            <td class="benefit-name">Theft Reduction</td>
-            <td>AI-powered vision + QR exit verification creates a multi-layered security wall. Shrinkage reduced by up to 70%.</td>
+            <td>Works with existing POS systems(SmartPhones) — no expensive hardware upgrades required. Plug and play within days.</td>
             <td><span class="check-badge">✓</span></td>
           </tr>
           <tr data-animate="fade-up" style="animation-delay: 0.16s">
@@ -321,13 +354,13 @@
             <td><span class="check-badge">✓</span></td>
           </tr>
           <tr data-animate="fade-up" style="animation-delay: 0.24s">
-            <td class="benefit-name">Better CX</td>
+            <td class="benefit-name">Better and Easy Interface</td>
             <td>Customers love the autonomy — scan, pay, and leave at their own pace. No rushing, no waiting, no frustration.</td>
             <td><span class="check-badge">✓</span></td>
           </tr>
           <tr data-animate="fade-up" style="animation-delay: 0.32s">
             <td class="benefit-name">Real-time Analytics</td>
-            <td>Get live dashboards showing foot traffic, popular products, peak hours, and customer behavior — data-driven decisions made easy.</td>
+            <td>Get live popular products, peak hours, and customer behavior — data-driven decisions made easy.</td>
             <td><span class="check-badge">✓</span></td>
           </tr>
           <tr data-animate="fade-up" style="animation-delay: 0.40s">
