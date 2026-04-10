@@ -478,17 +478,6 @@ img {
   background: #f8faff;
 }
 
-.problem-statement-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 24px;
-}
-
-.problem-statement-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
 .problem-statement-text {
   font-size: 1.08rem;
   color: var(--gray-700);
